@@ -1,0 +1,943 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.top-links ul li {
+  float: left;
+  list-style: none;
+  border-right: 1px solid wheat;
+}
+
+.top-links ul li:last-child {
+  border: none;
+}
+
+.top-links a {
+  text-decoration: none;
+  color: black;
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* account dropdown start  */
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown1 ul li {
+  border-right: none;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: auto;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: 0.4s ease-in;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display: block;
+  padding-left: 0;
+  background-color: white;
+}
+
+/* account dropdown end */
+
+
+/* middle header start  */
+
+.middle-header-logo img {
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.icon-bagde {
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+}
+
+.dropdown1 i {
+  color: black;
+}
+
+.font-bg {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
+
+/*======================= middle header end =====================*/
+
+/* ==============  ========= main navabar start ====================  */
+
+.nav-item {
+  margin-right: 10px !important;
+  margin-left: 10px !important;
+}
+
+.tooltip {
+  background-color: #bf8072;
+  opacity: 1;
+  top: -12px;
+  left: 20px;
+  padding: 0px 6px;
+  padding-bottom: 9px;
+  font-size: 11px;
+  color: black;
+  text-align: center;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 23% 74%, 7% 98%, 10% 75%, 0% 75%);
+}
+
+.nav-link {
+  font-weight: 600;
+  font-size: 13px !important;
+  color: #27272a !important;
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: #fd7e14;
+}
+
+.end-link {
+  color: #c08275 !important;
+  font-size: 17px !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin: 0;
+}
+
+.dropdown-item {
+  font-size: 13px;
+  font-weight: 600;
+  color: #363a3e !important;
+}
+
+.nav-link:hover {
+  color: #bf8072 !important;
+}
+
+.dropdown-menu {
+  border: transparent !important;
+}
+
+/*========== meega-menu start  ================*/
+
+.navbar .megamenu {
+  padding: 1rem;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu {
+    position: static !important;
+  }
+
+  .navbar .megamenu {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
+
+/* ============ desktop view .end// ============ */
+
+
+/* ============ mobile view ============ */
+@media(max-width: 991px) {
+
+  .navbar.fixed-top .navbar-collapse,
+  .navbar.sticky-top .navbar-collapse {
+    overflow-y: auto;
+    max-height: 90vh;
+    margin-top: 10px;
+  }
+}
+
+.col-megamenu ul li a {
+  padding-left: 0 !important;
+}
+
+
+
+/*========== meega-menu end ================*/
+
+#paqes:hover .dropdown-menu {
+  display: block;
+}
+
+/* ======================== main navabar end ===================== */
+
+/*============== heading navbar start =========*/
+
+.heading-nav {
+  text-align: center;
+}
+
+.heading-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#select {
+  background-color: white;
+  border: 1px solid whitesmoke;
+}
+
+/*============== heading navbar end ========= */
+
+/* --=======product section start======  */
+.all-products {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  height: 150px;
+  background-color: #f9f6f6;
+  border-left: 1px solid wheat;
+  border-right: 1px solid wheat;
+  overflow: hidden;
+}
+
+.product img {
+  width: 100px;
+  transition: 0.5s ease;
+}
+
+.product:hover img {
+  transform: scale(1.2);
+}
+
+/*========== new shape start ========== */
+.product-label {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  height: 40px;
+  width: 70px;
+  background-color: #f3612e;
+  z-index: 10;
+  clip-path: polygon(73% 0, 56% 25%, 73% 50%, 0 50%, 0 25%, 0% 0%);
+}
+
+/*========== color hover start ======== */
+.product-variations {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  z-index: 20;
+  display: none;
+  transition: 0.5s ease-in;
+}
+
+.product:hover .product-variations {
+  display: block;
+}
+
+.product-variations span {
+  padding: 1px;
+  margin-left: 4px;
+  border: 1px solid transparent;
+}
+
+.product-variations span:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.product-variations #one {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.product-variations a {
+  width: 13px;
+  height: 13px;
+  display: block;
+}
+
+
+/*========= product detail start ============ */
+.pro-detail a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+  line-height: initial;
+}
+
+.pro-detail h4 {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.pro-detail del {
+  opacity: 0.5;
+  font-weight: lighter;
+}
+
+.pro-detail i {
+  font-size: 12px;
+  color: yellowgreen;
+}
+
+#opacity50 {
+  opacity: 0.6;
+  font-size: 14px;
+}
+
+/*============ product details overlay ==== */
+.pro-detail-over {
+  display: none;
+  position: absolute;
+  bottom: 0%;
+  right: 0;
+  left: 0;
+}
+
+.pro-detail-over img {
+  height: 15px;
+  width: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.product:hover .pro-detail-over {
+  display: block;
+  background-color: #f9f6f6;
+  animation-name: example;
+  animation-duration: 0.6s;
+}
+
+@keyframes example {
+  0% {
+    bottom: -20%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+}
+
+
+/*--=======product section end======- */
+
+.font-bg img {
+  height: 20px;
+  width: 20px;
+}
+
+
+/* ====== home page slider start========  */
+
+.inner {
+  border: 2px solid black;
+}
+
+#sale-fashion {
+  text-transform: uppercase;
+  font-size: 45px;
+  background-color: white;
+  font-weight: 700;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-slider img {
+  display: block;
+  position: relative;
+  animation-name: showslider;
+  animation-duration: 1s;
+}
+
+@keyframes showslider {
+  0% {
+    bottom: -50%;
+  }
+
+  100% {
+    bottom: 0%;
+  }
+}
+
+/* ====== home page slider end========  */
+
+/*====== fashion product start === */
+
+.fashion-info a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+}
+
+.fashion-info span {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 50%;
+}
+
+.fashion-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  background-color: white;
+}
+
+.fashion-image {
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.fashion-div:hover img {
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
+}
+
+/*====== fashion product end === */
+
+/*====== best month offer start ======= */
+
+.month-offer:hover img {
+  transform: scale(1.1);
+  transition: 0.6s ease;
+}
+
+.offer-image {
+  overflow: hidden;
+}
+
+.over-banner h3>a {
+  text-decoration: none;
+  color: black;
+  font-size: 35px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.over-banner a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333742;
+  text-transform: uppercase;
+}
+
+
+.banner-content {
+  height: 330px;
+  width: 150px;
+  border: 3px solid #bf8072;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.over-banner {
+  position: absolute;
+  top: 40%;
+  right: 30%;
+  background-color: white;
+  text-align: center;
+}
+
+/*====== best month offer start ======= */
+
+/*======== baby product start  =========*/
+.baby-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  opacity: 70%;
+  width: 90%;
+  height: 90%;
+}
+
+.baby-image {
+  overflow: hidden;
+}
+
+.baby-image:hover img {
+  transform: scale(1.1);
+  transition: 0.6s ease;
+}
+
+.baby-shoe {
+  overflow: hidden;
+}
+
+.baby-shoe:hover img {
+  transform: scale(1.1);
+  transition: 0.6s ease-in-out;
+}
+
+.best-offer-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.shoe-info {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+/*======== baby product end  =========*/
+
+/*============ mixitup start ========= */
+.product-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-wrapper:hover img {
+  transform: scale(1.1);
+  transition: 0.4s ease;
+}
+
+.over-lay {
+  display: none;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  animation-name: mixitup;
+  animation-duration: 0.6s;
+}
+
+@keyframes mixitup {
+  0% {
+    right: -10%;
+    bottom: 5%;
+  }
+
+  100% {
+    right: 5%;
+    bottom: 5%;
+  }
+}
+
+.product-wrapper:hover .over-lay {
+  display: block !important;
+}
+
+.over-lay a {
+  margin-top: 5px;
+  padding: 2px 5px;
+}
+
+.over-lay i {
+  font-size: 14px;
+}
+
+.mixit-detail a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1f2430;
+  margin-top: 5px;
+}
+
+.mixit-detail a:hover {
+  color: #bf8072;
+}
+
+.mixit-detail a>i {
+  color: yellowgreen;
+  font-size: 11px;
+}
+
+.filter a:focus {
+  color: #141926 !important;
+  border-bottom: 1.5px solid #989899;
+}
+
+/*============ mixitup end ========= */
+
+/*========= mixit support start ========= */
+.one i {
+  font-size: 35px;
+  color: rgb(201, 133, 45);
+}
+
+.two a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #1b1b1e;
+  font-weight: bold;
+}
+
+.two a:hover {
+  color: #bf8072;
+  transition: 0.6s ease;
+}
+
+.two p {
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+/*========= mixit support end ========= */
+
+/*====== best selling slider nav position start ==== */
+.owl-prev {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40%;
+  left: 25px;
+  display: block !important;
+  border: 0px solid black;
+  transition: 0.6s ease-in;
+}
+
+.owl-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 40%;
+  right: 25px;
+  display: block !important;
+  border: 0px solid black;
+  transition: 0.6s ease-in;
+}
+
+
+.owl-prev i,
+.owl-next i {
+  transform: scale(1, 6);
+  color: #ccc;
+}
+
+.owl-next span,
+.owl-prev span {
+  font-size: 35px;
+}
+
+/*====== best selling slider start ==== */
+
+/*========= shipping policy start ========= */
+.shipping-policy {
+  background-image: url('../images/shipping-policy.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+}
+
+.shipping span {
+  font-size: 17px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+  color: #bf8072;
+}
+
+.shipping h2 {
+  line-height: 50px;
+  margin-bottom: 40px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.shipping .btn-link-down-line {
+  text-decoration: none;
+  color: #c48b7e;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.btn-link-down-line::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 3px;
+  height: 2px;
+  background-color: rgba(27, 27, 30, .8);
+}
+
+.btn-link-down-line:hover::after {
+  background-color: #c48b7e;
+  width: 70%;
+  transition: 0.5s ease;
+}
+
+/*========= shipping policy end ========= */
+
+/*======= Inspirational posts start ======== */
+.post {
+  height: 350px;
+  margin-bottom: 30px;
+}
+
+.post-image {
+  overflow: hidden;
+  height: 50%;
+}
+
+.post:hover img {
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.post-details {
+  position: absolute;
+  width: 85%;
+  height: 50%;
+  margin-top: -40px;
+  background-color: #f8f8f8;
+}
+
+.post-details .link-fashion {
+  text-decoration: none;
+  color: #c48b7e;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.post-details .link-fashion:hover {
+  text-decoration: underline;
+}
+
+.post-details h5>a {
+  text-decoration: none;
+  color: #1b1b1e;
+  font-weight: bold;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+
+.post-details p {
+  opacity: 60%;
+  font-size: 16px;
+}
+
+.post-details .read-more {
+  text-decoration: none;
+  font-size: 14px;
+  color: #88888a;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.read-more::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  margin-top: 2px;
+  height: 2px;
+  background-color: rgba(27, 27, 30, .8);
+}
+
+.read-more:hover::after {
+  background-color: #c48b7e;
+  width: 60%;
+  transition: 0.5s ease;
+}
+
+/*======= Inspirational posts end ========= */
+
+/*======== partner slider start ========= */
+.partner-slider {
+  background-color: #f8f8f8;
+}
+
+.partner-slider img {
+  cursor: pointer;
+}
+
+/*========= partner slider end ============ */
+
+/*====== footer section start ========= */
+.footer-box {
+  border-left: 2px solid #e7e7e8;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+.footer-box h6 {
+  font-size: 15px;
+  color: #1b1b1e;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+.footer-icons i {
+  color: #141926;
+  font-size: 16px;
+  font-family: Font Awesome 6 Brands;
+  padding: 5px;
+}
+
+.footer-icons i:hover {
+  color: blue;
+}
+
+.footer-menu {
+  padding-left: 0px;
+  padding-bottom: 20px;
+}
+
+.footer-menu li {
+  list-style: none;
+  line-height: 32px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #818181;
+}
+
+.footer-bottom span {
+  font-size: 13px;
+  color: #848486;
+}
+
+/*====== footer section end ========= */
+
+/*========= newslatter section start ==== */
+
+.subscribe-form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-radius: 0% !important;
+  color: black;
+  font-size: 14px;
+}
+
+/*======= newslatter section start ====== */
+
+/*=========== service info start ======== */
+.service-info img {
+  height: 45px;
+  width: 70px;
+}
+
+.service-info {
+  border-left: 1.5px solid #d1d1d1;
+}
+
+.service-info h5>a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #1b1b1e;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.service-info p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.service-info h5>a:hover {
+  color: #bf8072;
+  transition: 0.5s ease;
+}
+
+/*=========== service info end ======== */
+
+/* jump button start  */
+
+
+.back-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  height: 40px;
+  width: 40px;
+  background: #bf8072 !important;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+  opacity: 100%;
+  transition: opacity 0.5s;
+}
+
+.back-to-top:hover {
+  opacity: 60%;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.back-to-top-icon {
+  width: 1rem;
+  height: 1rem;
+  color: #7ac9f9;
+}
+
+.progress-bar {
+  height: 1rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* jump button start  */

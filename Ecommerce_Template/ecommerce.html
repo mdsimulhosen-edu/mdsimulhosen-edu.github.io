@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Home </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--=============== sticky navbar ============ -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/sp.stickyHeader.css">
+
+    <style type="text/css">
+        html,
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fafafa;
+            font-family: 'Open Sans';
+        }
+
+        #demo-header {
+            width: 100%;
+            height: auto;
+            display: block;
+            text-align: center;
+            color: #fff;
+        }
+
+        #demo-header .header-top {
+            width: 100%;
+            display: block;
+            padding-top: 20px;
+        }
+
+        #demo-header .header-bottom {
+            width: 100%;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="full-body">
+        <!--============= header start ============== -->
+        <section>
+            <div class="container-fluid">
+                <header id="demo-header">
+                    <section class="header-top">
+                        <div class="top-header  d-none d-lg-block position-relative">
+                            <div class="container">
+                                <div class="row d-flex align-items-center py-2">
+                                    <div class="col-lg-4">
+                                        <div class="d-flex">
+                                            <div class="ps-1" style="width: 40%; background-color: #fb4;"><span
+                                                    style="font-size: 13px;">
+                                                    Help & Support </span></div>
+                                            <div style="width:60%;">
+                                                <div class="owl-carousel top-news owl-theme text-black text-start">
+                                                    <div class="item">
+                                                        <div class="content">
+                                                            <span style="opacity: 0.6; font-size: 13px;">New arrival
+                                                                product
+                                                                2021</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <div class="content">
+                                                            <span class="opacity-50"
+                                                                style="opacity: 0.6; font-size: 13px;">Excepteur
+                                                                occaecat
+                                                                cupidatat</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8 d-flex align-items-center">
+                                        <div class="top-links ms-auto float-end pt-2 ">
+                                            <ul>
+                                                <li class="px-2"><a href="#">Become Seller </a></li>
+                                                <li class="px-2"><a href="#"> Help & Support </a></li>
+                                                <li class="px-2"><a href="#"> USA / USD / English </a></li>
+                                                <li class="px-2 dropdown1" onclick="myFunction()"><a href="#"
+                                                        class="dropbtn"><img
+                                                            src="assets/images/font-icons/png/005-account.png" alt=""
+                                                            style="height: 18px; width: 18px;"> My
+                                                        Account</a>
+                                                    <ul id="myDropdown" class="dropdown-content">
+                                                        <li><a href="#">My Account</a></li>
+                                                        <li><a href="#">Checkout</a></li>
+                                                        <li><a href="#">Wishlist</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </section>
+                    <section class="header-bottom">
+                        <div class="main-nav container-fluid">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                <div class="container pt-3">
+                                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+                                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                        <ul class="navbar-nav">
+                                            <!-- navbar tooltip  -->
+                                            <li class="nav-item position-relative">
+                                                <a href="#">
+                                                    <img src="assets/images/logo.png" alt="">
+                                                </a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    home
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                    <li><a class="dropdown-item" href="#">All Demos</a></li>
+                                                    <li><a class="dropdown-item" href="#">Minimal</a></li>
+                                                    <li><a class="dropdown-item" href="#">Watches</a></li>
+                                                    <li><a class="dropdown-item" href="#">Fatloss</a></li>
+                                                    <li><a class="dropdown-item" href="#">Food Corner</a></li>
+                                                    <li><a class="dropdown-item" href="#">Classic</a></li>
+                                                    <li><a class="dropdown-item" href="#">Optical</a></li>
+                                                    <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                                    <li><a class="dropdown-item" href="#">Grocery</a></li>
+                                                </ul>
+
+                                            </li>
+                                            <li class="nav-item dropdown has-megamenu">
+                                                <a class="nav-link" href="#" data-bs-toggle="dropdown"> Shop </a>
+                                                <div class="dropdown-menu megamenu" role="menu">
+                                                    <div class="container">
+                                                        <div class="row g-3">
+                                                            <div class="col-lg-3 col-6">
+                                                                <div class="col-megamenu">
+                                                                    <h6 class="title fw-bold pb-1 text-uppercase">
+                                                                        Product Grid
+                                                                        View
+                                                                    </h6>
+                                                                    <ul class="list-unstyled text-start">
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Full</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Modern</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Left
+                                                                                Sidebar
+                                                                                1</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Left
+                                                                                Sidebar
+                                                                                2</a></li>
+                                                                        <li><a class="dropdown-item" href="#"></a></li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Right
+                                                                                Sidebar 1</a></li>
+                                                                    </ul>
+                                                                </div> <!-- col-megamenu.// -->
+                                                            </div><!-- end col-3 -->
+                                                            <div class="col-lg-3 col-6">
+                                                                <div class="col-megamenu">
+                                                                    <h6 class="title fw-bold pb-1 text-uppercase">
+                                                                        Product List
+                                                                        View
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li><a class="dropdown-item" href="#">Shop List
+                                                                                Full</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Modern</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Left
+                                                                                Sidebar
+                                                                                1</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Left
+                                                                                Sidebar
+                                                                                2</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Left
+                                                                                Sidebar
+                                                                                3</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Shop Grid
+                                                                                Right
+                                                                                Sidebar 1</a></li>
+                                                                    </ul>
+                                                                </div> <!-- col-megamenu.// -->
+                                                            </div><!-- end col-3 -->
+                                                            <div class="col-lg-3 col-6">
+                                                                <div class="col-megamenu">
+                                                                    <h6 class="title fw-bold pb-1 text-uppercase">
+                                                                        Woocommerce
+                                                                        Pages
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li><a class="dropdown-item" href="#">Cart</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                                href="#">Checkout</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">My
+                                                                                Account</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                                href="#">Registration</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item"
+                                                                                href="#">Wishlist</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Single
+                                                                                Shop 1</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div> <!-- col-megamenu.// -->
+                                                            </div>
+                                                            <div class="col-lg-3 col-6">
+                                                                <div class="col-megamenu">
+                                                                    <h6 class="title fw-bold pb-1 text-uppercase">
+                                                                        Product Thumbs
+                                                                    </h6>
+                                                                    <ul class="list-unstyled">
+                                                                        <li><a class="dropdown-item" href="#">Hover
+                                                                                Background
+                                                                                Light</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Hover
+                                                                                Shadow
+                                                                                Active</a></li>
+                                                                        <li><a class="dropdown-item" href="#">Hover
+                                                                                Image
+                                                                                Zoom</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Hover Btn
+                                                                                Slide
+                                                                                1</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Hover Btn
+                                                                                Slide
+                                                                                2</a>
+                                                                        </li>
+                                                                        <li><a class="dropdown-item" href="#">Hover Btn
+                                                                                Slide
+                                                                                3</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div> <!-- col-megamenu.// -->
+                                                            </div><!-- end col-3 -->
+                                                        </div>
+
+                                                    </div>
+                                                    <!-- end row -->
+                                                </div> <!-- dropdown-mega-menu.// -->
+
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">pages</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                                    <li><a class="dropdown-item" href="#">Help and Support</a></li>
+                                                    <li><a class="dropdown-item" href="#">About Owner</a></li>
+                                                    <li><a class="dropdown-item" href="#">About Us 1</a></li>
+                                                    <li><a class="dropdown-item" href="#">About Us 2</a></li>
+                                                    <li><a class="dropdown-item" href="#">Services</a></li>
+                                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                                    <li><a class="dropdown-item" href="#">404 Page</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    blog
+                                                </a>
+                                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                    <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                                    <li><a class="dropdown-item" href="#">Blog List</a></li>
+                                                    <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                                                    <li><a class="dropdown-item" href="#">Missionary Grid</a></li>
+                                                    <li><a class="dropdown-item" href="#">Video Grid</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                    elements
+                                                </a>
+                                                <ul class="dropdown-menu dropend">
+                                                    <li><a class="dropdown-item" href="#"
+                                                            data-bs-toggle="dropdown">Product
+                                                            Thumbnails</a></li>
+
+                                                    <!-- <li class="dropdown">
+                                                        <a class="dropdown-toggle dropdown-item" id="pages" href="#" data-bs-toggle="dropdown">Another</a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">Grid View Style</a></li>
+                                                            <li><a class="dropdown-item" href="#">List View Style</a></li>
+                                                        </ul>
+                                                    </li> -->
+
+                                                    <li><a class="dropdown-item" href="#">Product Carousel</a></li>
+                                                    <li><a class="dropdown-item" href="#">Product Tab</a></li>
+                                                    <li><a class="dropdown-item" href="#">Typography</a></li>
+                                                    <li><a class="dropdown-item" href="#">Banner Style</a></li>
+                                                    <li><a class="dropdown-item" href="#">Accordion</a></li>
+                                                    <li><a class="dropdown-item" href="#">Flash Deal</a></li>
+                                                    <li><a class="dropdown-item" href="#">Product Category</a></li>
+                                                    <li><a class="dropdown-item" href="#">Fact Counter</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                                    </div>
+                                    <div class="middle-header-logo float-end d-flex">
+                                        <div class="font-bg  me-3 rounded-circle" style="background-color: whitesmoke;">
+                                            <a href="#"><img
+                                                    src="assets/images/font-icons/png/004-search-interface-symbol.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="font-bg  me-3 rounded-circle" style="background-color: whitesmoke;">
+                                            <a href="#"><img src="assets/images/font-icons/png/006-heart.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="font-bg me-3 rounded-circle" style="background-color: whitesmoke;">
+                                            <a href="#"><img src="assets/images/font-icons/png/001-compare.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="font-bg me-3 rounded-circle position-relative"
+                                            style="background-color: whitesmoke;">
+                                            <div>
+                                                <a href="#"><img
+                                                        src="assets/images/font-icons/png/003-shopping-cart.png"
+                                                        alt=""></a>
+                                                <div
+                                                    class="position-absolute top-0 start-0 translate-middle icon-bagde badge text-white text-center bg-success rounded-circle fw-light">
+                                                    <span>3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+
+                        </div>
+                    </section>
+                </header>
+            </div>
+        </section>
+        <!--============= header end ============== -->
+
+
+
+        <!--============= slider section  end ============== -->
+        <section class="d-none d-md-block d-lg-block">
+            <div class="container text-center mt-5" style="height: 330px; overflow: hidden;">
+                <div class="row home-slider overflow-hidden">
+                    <div class="col-3">
+                        <img src="assets/images/slider/41.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-6 p-5 pt-1">
+                        <div class="position-relative">
+                            <h1 id="sale-fashion">New Fashion Sale</h1>
+                            <div class="inner">
+                                <h3 class="pt-5 opacity-50" style="font-size: 15px;">50% SALE OFF ALL ITEMS</h3>
+                                <div style="padding-top: 130px;">
+                                    <p>www.yourwebsite.com</p>
+                                    <a href="product_page.html"
+                                        class="btn btn-dark btn-outline-success px-3 py-2 text-white mb-3">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/images/slider/42.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--============= slider section  end ============== -->
+
+
+        <!--============= fashion start ============= -->
+        <section>
+            <div class="container mt-3">
+                <div class="row ">
+                    <div class="col-12 col-md-6 col-lg-4 text-center position-relative fashion-div">
+                        <div class="fashion-image"><a href="#">
+                                <img src="assets/images/fashion-image/category-9.png" class="img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="fashion-info p-3"><a href="#">Women Fashion</a><br><span>(89)</span>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center position-relative fashion-div">
+                        <div class="fashion-image"><a href="#">
+                                <img src="assets/images/fashion-image/category-10.png" class="img-fluid" alt="">
+                            </a></div>
+                        <div class="fashion-info p-3"><a href="#">Man Fashion</a><br><span>(89)</span></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center position-relative fashion-div">
+                        <div class="fashion-image"><a href="#">
+                                <img src="assets/images/fashion-image/category-11.png" class="img-fluid" alt="">
+                            </a></div>
+                        <div class="fashion-info p-3"><a href="#">Winter Clothing</a><br><span>(89)</span></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center position-relative fashion-div">
+                        <div class="fashion-image"><a href="#">
+                                <img src="assets/images/fashion-image/category-12.png" class="img-fluid" alt="">
+                            </a></div>
+                        <div class="fashion-info p-3"><a href="#">Children Dress</a><br><span>(89)</span></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center position-relative fashion-div">
+                        <div class="fashion-image"><a href="#">
+                                <img src="assets/images/fashion-image/category-13.png" class="img-fluid" alt="">
+                            </a></div>
+                        <div class="fashion-info p-3"><a href="#">Bags & Shoes</a><br><span>(89)</span></div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 text-center position-relative fashion-div">
+                        <div class="fashion-image"><a href="#">
+                                <img src="assets/images/fashion-image/category-14.png" class="img-fluid" alt="">
+                            </a></div>
+                        <div class="fashion-info p-3"><a href="#">Handi Crafts</a><br><span>(89)</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--============= fashion start ============= -->
+
+
+        <!--========== best month offer start========  -->
+        <section>
+            <div class="container my-5">
+                <div class="offer-heading text-center">
+                    <h1 style="font-size: 36px; font-weight: bold;">Best Month Offer</h1>
+                    <p style="width: 60%; margin:auto;font-size: 15px; opacity: 50%;">Erat pellentesque curabitur
+                        euismod
+                        dui etiam pellentesque rhoncus fermentum tristique lobortis lectus magnis. Consequat porta
+                        turpis
+                        maecenas</p>
+                </div>
+                <div class="row bg-light month-offer my-3">
+                    <div class="col-lg-6 col-md-6 d-lg-block d-md-block d-none  offer-image">
+                        <img src="assets/images/month-offer.png" alt="">
+                    </div>
+
+                    <div
+                        class="col-lg-6  col-md-6 d-lg-block d-none d-md-block  p-5 d-flex align-items-center position-relative">
+                        <div class="banner-content">
+
+                        </div>
+                        <div class="over-banner p-2">
+                            <span
+                                style="text-transform: uppercase;font-size: 17px; letter-spacing: 3px;color: #f36635;font-weight: 600;">Sale
+                                Up To 50%</span>
+                            <h3 class="my-3"><a href="#">EXO Travel Bags</a></h3>
+                            <a href="#">Bags and Shoes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== best month offer end========  -->
+
+        <!--========== baby product start ========== -->
+        <section>
+            <div class="container my-4">
+                <div class="row">
+                    <div class="col-12 col-lg-6 position-relative">
+                        <div class="baby-image">
+                            <img src="assets/images/home page image/85.png" class="img-fluid" alt="">
+                            <div class="baby-info text-center">
+                            </div>
+                            <div class="best-offer-content text-center">
+                                <a href="#"
+                                    style="text-decoration: none;color: #141926;font-size: 18px;letter-spacing: 2px; font-weight: 600;">Baby
+                                    Products</a>
+                                <h1
+                                    style="text-transform: uppercase; font-size: 100px; font-weight: 600; color: #f3612e;">
+                                    sale</h1>
+                                <h3
+                                    style="text-transform: uppercase; margin-bottom:25px; font-size:15px; font-weight:600;">
+                                    Sale Up To 30%</h3>
+                                <a href="#" class="btn btn-dark"
+                                    style="font-size: 13px; border-radius:0px;letter-spacing: 2px;">SHOP
+                                    NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 position-relative">
+                        <div class="baby-shoe">
+                            <img src="assets/images/home page image/shoe.png" class="img-fluid" alt="">
+                            <div class="shoe-info text-start">
+                                <a href="#"
+                                    style="text-decoration: none; font-size:18px;margin-bottom: 10px; letter-spacing:3px;color: #141926; font-weight: 600;">Casual
+                                    Shoes</a><br>
+                                <a href="#"
+                                    style="text-decoration: none;font-size: 30px; font-weight: 600; letter-spacing: 3px;color: #bf8072; text-transform: uppercase; margin-bottom: 10px;">New
+                                    Arrivals</a><br>
+                                <a href="#" class="btn btn-dark mt-3"
+                                    style="font-size: 13px; border-radius:0px;letter-spacing: 2px;">SHOP
+                                    NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========== baby product end ========== -->
+
+        <!--========= mixitup start ============== -->
+        <section class="area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="filter text-center mt-5">
+                            <a href="#e" class="text-decoration-none text-black p-4 pb-1" data-filter="all">New
+                                Arrival</a>
+                            <a href="#e" class="text-decoration-none text-black p-4 pb-1"
+                                data-filter=".sell">Trending</a>
+                            <a href="#e" class="text-decoration-none text-black p-4 pb-1" data-filter=".trend">Best
+                                Selling</a>
+                            <a href="#e" class="text-decoration-none text-black p-4 pb-1"
+                                data-filter=".feature">Featured</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mymix my-5">
+                    <div class="mix col-lg-3 col-md-6 col-12 sell trend">
+                        <div class="item">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-4.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Men Cotton Dress Shirts</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;"> $17.00 <del
+                                            style="opacity: 70%;">$32.28</del></p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix col-lg-3 col-md-6 col-12 trend feature">
+                        <div class="item">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-5.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Women Black Fashion Shirt</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;">$25.62.00</p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix col-lg-3 col-md-6 col-12 feature sell">
+                        <div class="item">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-6.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Women White T-Shirt</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;">$34.88></p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix col-lg-3 col-md-6 col-12 trend sell ">
+                        <div class="item">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-7.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Men Cotton Dress Shirts</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;"> $17.00 <del
+                                            style="opacity: 70%;">$32.28</del></p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix col-lg-3 col-md-6 col-12 sell feature">
+                        <div class="item">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-11.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Women Fish Cut Cloth</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;">$106.88</p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix col-lg-3 col-md-6 col-12 trend sell">
+                        <div class="item">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-8.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Blazar Jins Coat</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;"> $38.00 <del style="opacity: 70%;">
+                                            $40.00</del></p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix col-lg-3 col-md-6 col-12 trend sell feature">
+                        <div class="item">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-9.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Fashion Summer Cloth</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;">$7.00</p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix col-lg-3 col-md-6 col-12 trend sell">
+                        <div class="item">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-10.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Women Modern Bags</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;">$16.30</p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row my-5">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex justify-content-around p-3">
+                            <div class="one"><i class="fa-solid fa-sack-dollar"></i></div>
+                            <div class="two">
+                                <a href="#">Money Gurantee</a>
+                                <p>With A 30 Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex justify-content-around p-3">
+                            <div class="one"><i class="fa-solid fa-phone-volume"></i></div>
+                            <div class="two">
+                                <a href="#">Best Online Support</a>
+                                <p>Hour: 10:00AM - 5:00PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex justify-content-around p-3">
+                            <div class="one"><i class="fa-solid fa-circle-dollar-to-slot"></i></div>
+                            <div class="two">
+                                <a href="#">Win $100 To Shop</a>
+                                <p>Enter Now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="d-flex justify-content-around p-3">
+                            <div class="one"><i class="fa-solid fa-jet-fighter"></i></div>
+                            <div class="two">
+                                <a href="#">Free Shipping</a>
+                                <p>Order Over $100</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========= mixitup end ============== -->
+
+        <!--=========== best selling product slider start ================ -->
+        <section>
+            <div class="container">
+                <div class="top-product text-center w-50 mx-auto">
+                    <span style="font-size: 15px; letter-spacing:2px; text-transform:uppercase; font-weight:600;">Top
+                        Products</span>
+                    <h1
+                        style="font-size: 34px; font-weight:bold; color:#141926; margin-top: 10px;font-family: jost,sans-serif;">
+                        Best Selling Products</h1>
+                    <span class="sub-title opacity-75">Cillum eu id enim aliquip aute ullamco anim. Culpa deserunt
+                        nostrud
+                        excepteur voluptate velit ipsum esse enim.</span>
+                </div>
+            </div>
+            <div class="container-fluid my-5">
+                <div class="owl-carousel owl-theme best-sell">
+                    <div class="item">
+                        <div class="content">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-4.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Men Cotton Dress Shirts</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;"> $17.00 <del
+                                            style="opacity: 70%;">$32.28</del></p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-5.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Women Black Fashion Shirt</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;">$25.62.00</p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-6.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Women White T-Shirt</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;">$34.88</p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-7.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Men Cotton Dress Shirts</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;"> $17.00 <del
+                                            style="opacity: 70%;">$32.28</del></p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-11.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Women Fish Cut Cloth</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;">$106.88</p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <div class="product-wrapper">
+                                <div class="product-photo">
+                                    <a href="#"><img src="assets/images/home page image/mixitup image/height-8.png"
+                                            class="img-fluid" alt=""></a>
+                                    <div class="over-lay">
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Quick View">
+                                                <i class="fa-solid fa-magnifying-glass-plus"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left"
+                                                title="Add to Wishlist">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="Add to Cart">
+                                                <i class="fa-solid fa-bag-shopping"></i>
+                                            </a></div>
+                                        <div><a href="#" class="btn btn-light btn-outline-secondary"
+                                                data-bs-toggle="tooltip" data-bs-placement="left" title="">
+                                                <i class="fa-solid fa-code-compare"></i>
+                                            </a></div>
+                                    </div>
+                                </div>
+                                <div class="mixit-detail text-center">
+                                    <a href="#">Blazar Jins Coat</a>
+                                    <p class="fw-bold my-1" style="font-size: 14px;"> $38.00 <del style="opacity: 70%;">
+                                            $40.00</del></p>
+                                    <a href="#" class="text-black"><i class="fa-solid fa-star"></i><span
+                                            style="opacity:60%;">4.7 (35)</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=========== best selling product slider end ================ -->
+
+        <!--============= shipping policy start ========== -->
+        <section>
+            <div class="container-fluid shipping-policy">
+                <div class="row">
+                    <div class="col-lg-8 col-12 shipping p-5">
+                        <div class="text-center" style="margin-top: 30px;">
+                            <span>Shipping policy</span>
+                            <h2 class="w-75 mt-3 mb-5 mx-auto">Free shipping worldwide on all baskets over $200.</h2>
+                            <a href="#" class="btn-link-down-line position-relative">Shipping & Returns</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4"></div>
+                </div>
+            </div>
+        </section>
+        <!--============= shipping policy end ========== -->
+
+        <!--========= Inspirational Posts start =========== -->
+        <section class="pt-5">
+            <div class="container my-5">
+                <div class="post-heading text-center">
+                    <h2 style="font-size: 36px; font-weight:600;">Inspirational Posts</h2>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-lg-4 col-md-6 position-relative">
+                        <div class="post">
+                            <div class="post-image">
+                                <img src="assets/images/posts/2.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="post-details p-4 ps-2 mb-5">
+                                <a href="#" class="link-fashion">Fashion</a>
+                                <h5><a href="#">Post Format Gallery Blogs</a></h5>
+                                <p>In mattis scelerisque magna, ut tincidunt ex. Quisque nibh urna, pretium.</p>
+                                <a href="#" class="my-5 read-more position-relative">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 position-relative">
+                        <div class="post">
+                            <div class="post-image">
+                                <img src="assets/images/posts/4.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="post-details p-4 ps-2 mb-5">
+                                <a href="#" class="link-fashion">Sunglass</a>
+                                <h5><a href="#">Post Format Audio Blogs</a></h5>
+                                <p>In mattis scelerisque magna, ut tincidunt ex. Quisque nibh urna, pretium.</p>
+                                <a href="#" class="my-5 read-more position-relative">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-6 position-relative">
+                        <div class="post">
+                            <div class="post-image">
+                                <img src="assets/images/posts/3.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="post-details p-4 ps-2 mb-5">
+                                <a href="#" class="link-fashion">Optical</a>
+                                <h5><a href="#">A Beautiful Sunday Morning</a></h5>
+                                <p>In mattis scelerisque magna, ut tincidunt ex. Quisque nibh urna, pretium.</p>
+                                <a href="#" class="my-5 read-more position-relative">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--========= Inspirational Posts end ============= -->
+
+        <!--=============== parter slider start ========== -->
+        <section>
+            <div class="container-fluid px-5 partner-slider">
+                <div class="owl-carousel partner owl-theme">
+                    <div class="item">
+                        <div class="content">
+                            <img src="assets/images/partner/18.png" class="img-fluid px-2" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="assets/images/partner/19.png" class="img-fluid px-2" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="assets/images/partner/20.png" class="img-fluid px-2" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="assets/images/partner/21.png" class="img-fluid px-2" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="assets/images/partner/22.png" class="img-fluid px-2" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="assets/images/partner/23.png" class="img-fluid px-2" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="assets/images/partner/24.png" class="img-fluid px-2" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="content">
+                            <img src="assets/images/partner/25.png" class="img-fluid px-2" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== parter slider end ========== -->
+
+        <!--=========== footer start ========= -->
+        <section>
+            <div class="container-fluid">
+                <div class="row" style="border-top: 2px solid #e7e7e8;border-bottom: 2px solid #e7e7e8;">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-box pt-5">
+                        <a href="#"><img src="assets/images/logo.png" class="img-fluid" alt=""></a>
+                        <p style="font-size: 14px;margin: 35px 0px; opacity: 60%;">Sophisticated simplicity for the
+                            independent mind. </p>
+                        <div class="footer-icons d-flex justify-content-around w-50 pb-5 mb-5">
+                            <div><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+                            <div><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                            <div><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                            <div><a href="#"><i class="fab fa-snapchat-ghost"></i></a></div>
+                            <div><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-box pt-5">
+                        <h6>Quick Shop</h6>
+                        <ul class="footer-menu">
+                            <li><a href="#">Opticals</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Sale</a></li>
+                            <li><a href="#">Accessories</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-box pt-5">
+                        <h6>Customer Care</h6>
+                        <ul class="footer-menu">
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Compare</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-box pt-5">
+                        <h6>Account Info</h6>
+                        <ul class="footer-menu">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Track your Order</a></li>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Returns/Exchange</a></li>
+                            <li><a href="#">Product Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row footer-bottom px-4 py-3">
+                    <div class="col-lg-6 col-md-6 col-12 my-2">
+                        <span>© 2021 BigBazar All right reserved</span>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="d-flex justify-content-lg-end justify-content-md-end">
+                            <div class="px-3">
+                                <a href="#"><img src="assets/images/home page image/atm-card/1.png" alt=""></a>
+                            </div>
+                            <div class="px-3">
+                                <a href="#"><img src="assets/images/home page image/atm-card/2.png" alt=""></a>
+                            </div>
+                            <div class="px-3">
+                                <a href="#"><img src="assets/images/home page image/atm-card/3.png" alt=""></a>
+                            </div>
+                            <div class="px-3">
+                                <a href="#"><img src="assets/images/home page image/atm-card/4.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=========== footer end ========= -->
+
+        <!-- Scroll to top -->
+        <!-- <a href="#" class="bg-success text-white" id="scroll"><i class="fa fa-angle-up"></i></a> -->
+        <!-- End Scroll To top -->
+
+
+
+        <div class="progress-bar" />
+        <button class="back-to-top hidden">
+            <i class="fa fa-angle-up back-to-top-icon"></i>
+        </button>
+        <div class="progress-bar" />
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!--================== js, jquery  =============-->
+    <script src="assets//js/jquery-3.6.0.min.js"></script>
+    <script src="assets//js/owl.carousel.min.js"></script>
+    <script src="assets//js/top-news.js"></script>
+    <script src="assets/js/best-sell-slider.js"></script>
+    <script src="assets/js/partner-slider.js"></script>
+    <script src="assets/js/jump-to-top.js"></script>
+
+
+    <!--=============== sticky navbar start ============= -->
+    <script src="assets/js/sp.stickyHeader.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#demo-header').spSticyheader({
+                hideHeaderTarget: '.header-top',
+                scrollHeader: 200,
+                customClass: 'make-small',
+                mobileHeader: false
+            })
+        });
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    <!--========== home page mixitup script =========== -->
+    <script src="assets/js/mixitup.min.js"></script>
+    <script>
+        var mixer = mixitup('.mymix');
+    </script>
+
+    <!--=============== sticky navbar end ============= -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- account dropdown script  -->
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- mega-menu dropdown  -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+        // DOMContentLoaded  end
+    </script>
+
+</body>
+
+</html>

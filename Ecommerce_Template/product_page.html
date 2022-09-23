@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- fontawesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--=============== sticky navbar ============ -->
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/css/sp.stickyHeader.css">
+
+    <style type="text/css">
+        html,
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #fafafa;
+            font-family: 'Open Sans';
+        }
+
+        #demo-header {
+            width: 100%;
+            height: auto;
+            display: block;
+            text-align: center;
+            color: #fff;
+        }
+
+        #demo-header .header-top {
+            width: 100%;
+            display: block;
+            padding-top: 20px;
+        }
+
+        #demo-header .header-bottom {
+            width: 100%;
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--============= header start ============== -->
+    <section>
+        <div class="container-fluid">
+            <header id="demo-header">
+                <section class="header-top">
+                    <div class="top-header  d-none d-lg-block position-relative">
+                        <div class="container">
+                            <div class="row d-flex align-items-center py-2">
+                                <div class="col-lg-4">
+                                    <div class="d-flex">
+                                        <div style="width: 20%;"><span
+                                                style="font-size: 13px; font-weight: 600; color: black;">Top
+                                                News:</span></div>
+                                        <div style="width:80%; color: black;">
+                                            <div class="owl-carousel top-news owl-theme">
+                                                <div class="item">
+                                                    <div class="content">
+                                                        <span style="opacity: 0.6; font-size: 13px;">New arrival product
+                                                            2021</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item">
+                                                    <div class="content">
+                                                        <span style="opacity: 0.6; font-size: 13px;">Excepteur occaecat
+                                                            cupidatat</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 d-flex align-items-center">
+                                    <div class="top-links ms-auto float-end pt-2 ">
+                                        <ul>
+                                            <li class="px-2"><a href="#">Become Seller </a></li>
+                                            <li class="px-2"><a href="#"> Help & Support </a></li>
+                                            <li class="px-2"><a href="#"> USA / USD / English </a></li>
+                                            <li class="px-2 dropdown1" onclick="myFunction()"><a href="#"
+                                                    class="dropbtn"><img
+                                                        src="assets/images/font-icons/png/005-account.png" alt=""
+                                                        style="height: 18px; width: 18px;"> My
+                                                    Account</a>
+                                                <ul id="myDropdown" class="dropdown-content">
+                                                    <li><a href="#">My Account</a></li>
+                                                    <li><a href="#">Checkout</a></li>
+                                                    <li><a href="#">Wishlist</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle-header my-4 d-lg-block d-none position-relative">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div>
+                                        <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="middle-header-logo float-end d-flex">
+                                        <div class="font-bg  me-3 rounded-circle" style="background-color: whitesmoke;">
+                                            <a href="#"><img
+                                                    src="assets/images/font-icons/png/004-search-interface-symbol.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="font-bg  me-3 rounded-circle" style="background-color: whitesmoke;">
+                                            <a href="#"><img src="assets/images/font-icons/png/006-heart.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="font-bg me-3 rounded-circle" style="background-color: whitesmoke;">
+                                            <a href="#"><img src="assets/images/font-icons/png/001-compare.png"
+                                                    alt=""></a>
+                                        </div>
+                                        <div class="font-bg me-3 rounded-circle position-relative"
+                                            style="background-color: whitesmoke;">
+                                            <div>
+                                                <a href="#"><img
+                                                        src="assets/images/font-icons/png/003-shopping-cart.png"
+                                                        alt=""></a>
+                                                <div
+                                                    class="position-absolute top-0 start-0 translate-middle icon-bagde badge text-white text-center bg-success rounded-circle fw-light">
+                                                    <span>3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <section class="header-bottom">
+                    <div class="main-nav container-fluid">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light pt-4">
+                            <div class="container">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav">
+                                        <!-- navbar tooltip  -->
+                                        <li class="nav-item position-relative">
+                                            <a class="nav-link" aria-current="page" href="index.html">New Arrival
+                                                <span class="tooltip">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link " href="index.html" id="navbarDropdownMenuLink"
+                                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                home
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">All Demos</a></li>
+                                                <li><a class="dropdown-item" href="#">Minimal</a></li>
+                                                <li><a class="dropdown-item" href="#">Watches</a></li>
+                                                <li><a class="dropdown-item" href="#">Fatloss</a></li>
+                                                <li><a class="dropdown-item" href="#">Food Corner</a></li>
+                                                <li><a class="dropdown-item" href="#">Classic</a></li>
+                                                <li><a class="dropdown-item" href="#">Optical</a></li>
+                                                <li><a class="dropdown-item" href="#">Furniture</a></li>
+                                                <li><a class="dropdown-item" href="#">Grocery</a></li>
+                                            </ul>
+
+                                        </li>
+                                        <li class="nav-item dropdown has-megamenu">
+                                            <a class="nav-link" href="#" data-bs-toggle="dropdown"> Shop </a>
+                                            <div class="dropdown-menu megamenu" role="menu">
+                                                <div class="container">
+                                                    <div class="row g-3">
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="col-megamenu">
+                                                                <h6 class="title fw-bold pb-1 text-uppercase">Product
+                                                                    Grid
+                                                                    View
+                                                                </h6>
+                                                                <ul class="list-unstyled text-start">
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid
+                                                                            Full</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid
+                                                                            Modern</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid Left
+                                                                            Sidebar
+                                                                            1</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid Left
+                                                                            Sidebar
+                                                                            2</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid Left
+                                                                            Sidebar
+                                                                            3</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid
+                                                                            Right
+                                                                            Sidebar 1</a></li>
+                                                                </ul>
+                                                            </div> <!-- col-megamenu.// -->
+                                                        </div><!-- end col-3 -->
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="col-megamenu">
+                                                                <h6 class="title fw-bold pb-1 text-uppercase">Product
+                                                                    List
+                                                                    View
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item" href="#">Shop List
+                                                                            Full</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid
+                                                                            Modern</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid Left
+                                                                            Sidebar
+                                                                            1</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid Left
+                                                                            Sidebar
+                                                                            2</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid Left
+                                                                            Sidebar
+                                                                            3</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Shop Grid
+                                                                            Right
+                                                                            Sidebar 1</a></li>
+                                                                </ul>
+                                                            </div> <!-- col-megamenu.// -->
+                                                        </div><!-- end col-3 -->
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="col-megamenu">
+                                                                <h6 class="title fw-bold pb-1 text-uppercase">
+                                                                    Woocommerce
+                                                                    Pages
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item" href="#">Cart</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Checkout</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">My Account</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item"
+                                                                            href="#">Registration</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Wishlist</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Single Shop
+                                                                            1</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div> <!-- col-megamenu.// -->
+                                                        </div>
+                                                        <div class="col-lg-3 col-6">
+                                                            <div class="col-megamenu">
+                                                                <h6 class="title fw-bold pb-1 text-uppercase">Product
+                                                                    Thumbs
+                                                                </h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li><a class="dropdown-item" href="#">Hover
+                                                                            Background
+                                                                            Light</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Hover Shadow
+                                                                            Active</a></li>
+                                                                    <li><a class="dropdown-item" href="#">Hover Image
+                                                                            Zoom</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Hover Btn
+                                                                            Slide
+                                                                            1</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Hover Btn
+                                                                            Slide
+                                                                            2</a>
+                                                                    </li>
+                                                                    <li><a class="dropdown-item" href="#">Hover Btn
+                                                                            Slide
+                                                                            3</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div> <!-- col-megamenu.// -->
+                                                        </div><!-- end col-3 -->
+                                                    </div>
+
+                                                </div>
+                                                <!-- end row -->
+                                            </div> <!-- dropdown-mega-menu.// -->
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link" href="#" id="navbarDropdownMenuLink" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">pages</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Portfolio</a></li>
+                                                <li><a class="dropdown-item" href="#">Help and Support</a></li>
+                                                <li><a class="dropdown-item" href="#">About Owner</a></li>
+                                                <li><a class="dropdown-item" href="#">About Us 1</a></li>
+                                                <li><a class="dropdown-item" href="#">About Us 2</a></li>
+                                                <li><a class="dropdown-item" href="#">Services</a></li>
+                                                <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                                <li><a class="dropdown-item" href="#">404 Page</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                blog
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                                <li><a class="dropdown-item" href="#">Blog List</a></li>
+                                                <li><a class="dropdown-item" href="#">Blog Single</a></li>
+                                                <li><a class="dropdown-item" href="#">Missionary Grid</a></li>
+                                                <li><a class="dropdown-item" href="#">Video Grid</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link " href="#" id="navbarDropdownMenuLink" role="button"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                elements
+                                            </a>
+                                            <ul class="dropdown-menu dropend">
+                                                <li><a class="dropdown-item" href="#" data-bs-toggle="dropdown">Product
+                                                        Thumbnails</a></li>
+
+                                                <!-- <li class="dropdown">
+                                                    <a class="dropdown-toggle dropdown-item" id="pages" href="#" data-bs-toggle="dropdown">Another</a>
+                                                    <ul class="dropdown-menu">
+                                                        <li><a class="dropdown-item" href="#">Grid View Style</a></li>
+                                                        <li><a class="dropdown-item" href="#">List View Style</a></li>
+                                                    </ul>
+                                                </li> -->
+
+                                                <li><a class="dropdown-item" href="#">Product Carousel</a></li>
+                                                <li><a class="dropdown-item" href="#">Product Tab</a></li>
+                                                <li><a class="dropdown-item" href="#">Typography</a></li>
+                                                <li><a class="dropdown-item" href="#">Banner Style</a></li>
+                                                <li><a class="dropdown-item" href="#">Accordion</a></li>
+                                                <li><a class="dropdown-item" href="#">Flash Deal</a></li>
+                                                <li><a class="dropdown-item" href="#">Product Category</a></li>
+                                                <li><a class="dropdown-item" href="#">Fact Counter</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                                </div>
+                                <a href="#" class="end-link ">BUY NOW!</a>
+                            </div>
+                        </nav>
+
+                    </div>
+                </section>
+            </header>
+        </div>
+    </section>
+    <!--============= header end ============== -->
+
+    <!--============= content-title-link start ============== -->
+    <section>
+        <div class="container">
+            <div class="heading-link">
+                <div class="heading-nav">
+                    <h4 style="font-weight: 600; font-size: 30px;" class="py-2
+                    ">Shop List Full</h4>
+                    <a href="#">Home</a> /
+                    <a href="#">Shop</a>
+                    <span style="opacity: 0.7;">/ Shop List Full</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= content-title-link start ============== -->
+
+
+    <!--============= product header section  start ============== -->
+    <section>
+        <div class="products-header bg-light mt-5">
+            <div class="container p-3">
+                <div class="row">
+                    <div class="col-6 d-none d-lg-block">
+                        <span style="font-size: 14px;opacity: 0.6;">
+                            All Category( Showing 1 – 28 products of 23945 products )
+                        </span>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="row">
+                            <div class="col-2 d-sm-none d-md-block d-lg-block">
+                                <h6>Show:</h6>
+                            </div>
+                            <div class="col-2 d-sm-none d-md-block d-lg-block">
+                                <select name="" class="show-number rounded-pill" id="select">
+                                    <option value="1">6</option>
+                                    <option value="2">9</option>
+                                    <option value="3" selected="selected">12</option>
+                                    <option value="4">24</option>
+                                    <option value="5">36</option>
+                                    <option value="6">48</option>
+                                </select>
+                            </div>
+                            <div class="col-6 col-lg-6">
+                                <form>
+                                    <select name="orderby" class="orderby  rounded-pill" aria-label="Shop order"
+                                        id="select">
+                                        <option value="1" selected="selected">Default
+                                            sorting</option>
+                                        <option value="2">Sort by popularity</option>
+                                        <option value="3">Sort by average rating</option>
+                                        <option value="4">Sort by latest</option>
+                                        <option value="5">Sort by price: low to high
+                                        </option>
+                                        <option value="6">Sort by price: high to low
+                                        </option>
+                                    </select>
+                                    <input type="hidden" name="paged" value="1">
+                                    <input type="hidden" name="shop-page-layout" value="left-sidebar">
+                                </form>
+                            </div>
+                            <div class="col-2 col-lg-1">
+                                <a href="#"><img src="assets/images/font-icons/png/007-menu.png" alt=""
+                                        style="height: 18px; width: 18px;"></a>
+                            </div>
+                            <div class="col-2 col-lg-1">
+                                <a href="#">
+                                    <img src="assets/images/font-icons/png/009-list.png" alt=""
+                                        style="height: 18px; width: 18px;">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--============= product header section  end ============== -->
+
+
+
+
+
+    <!--============= products start ============== -->
+
+    <section>
+        <div class="container">
+            <div class="row all-products">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-3">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-79.png" alt="">
+                            <div class="product-label">
+                                <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                    <span>new</span>
+                                </div>
+                            </div>
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Coat Off Black Long Sleeve</a>
+                            <h4 class="py-2">$12.00 - $45.00</h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-3">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-48.png" alt="">
+
+
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Short Sleeve Polo Shirt</a>
+                            <h4 class="py-2">$10.00 - $18.50</h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-3">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-118.png" alt="">
+
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color d-none" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">GenShuo Black High Heels</a>
+                            <h4 class="py-2">$20.00 <del> $25.00</del></h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-3">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-34.png" alt="">
+                            <div class="product-label">
+                                <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                    <span>top</span>
+                                </div>
+                            </div>
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Luxury Fashanable Watches</a>
+                            <h4 class="py-2">$48.00 <del> $60.00</del></h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================= 4 items end ====================== -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-4">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-105.png" alt="">
+                            <div class="product-label">
+                                <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                    <span>new</span>
+                                </div>
+                            </div>
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Hottest Lunch Hotpot</a>
+                            <h4 class="py-2">$21.03 - 36.66</h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-4">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-165.png" alt="">
+
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">New Global Lenovo Pad</a>
+                            <h4 class="py-2">$398.99 - 579.49</h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-4">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-27.png" alt="">
+
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=================== product details =========== -->
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Moonmory Silver Ring</a>
+                            <h4 class="py-2">$15.00 <del> $34.00</del></h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-4">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-25.png" alt="">
+                            <div class="product-label">
+                                <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                    <span>top</span>
+                                </div>
+                            </div>
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Luxury Fashanable Watches</a>
+                            <h4 class="py-2">$10.00 - 17.55</h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================= 8 items end ====================== -->
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-4">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-97.png" alt="">
+                            <div class="product-label">
+                                <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                    <span>new</span>
+                                </div>
+                            </div>
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Latest bluetooth headphone</a>
+                            <h4 class="py-2">$15.00 <del> $150.00</del></h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-4">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-80.png" alt="">
+
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Latest Fleece Long Jackets</a>
+                            <h4 class="py-2">$120.00 <del> $150.00</del></h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-4">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-166.png" alt="">
+
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--=================== product details =========== -->
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Hip Hop Clothing T-Shirt</a>
+                            <h4 class="py-2">$45.00 <del> $50.00</del></h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-12 product p-2 mt-4">
+                    <div class="row">
+                        <div class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                            <img src="assets/images/products/squire-167.png" alt="">
+                            <div class="product-label">
+                                <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                    <span>top</span>
+                                </div>
+                            </div>
+                            <div class="product-variations">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="color" id="one"><a href="#"
+                                            style="background-color: #b78269;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #f1cc4e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #31749e;"></a></span>
+                                    <span class="color"><a href="#" style="background-color: #672a4f;"></a></span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pro-detail col-8 py-2 position-relative">
+                            <a href="#">Hot Chiffon Blouse & Moda</a>
+                            <h4 class="py-2">$38.00 <del> $50.00</del></h4>
+                            <div class="feedback d-flex justify-content-between mt-3">
+                                <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                        4.85 (132)</span></div>
+                                <div id="opacity50" class="pt-1">326 Sold</div>
+                            </div>
+
+                            <!--======= floating overlay ========= -->
+
+                            <div class="pro-detail-over py-2 px-3">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <a href="#"><img src="assets/images/font-icons/png/002-shopping-bag.png"
+                                                alt=""><span style="font-size: 12px;font-weight: 600;">
+                                                ADD TO CART</span></a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/006-heart.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top "
+                                                title="Add to Wishlist">
+                                        </a>
+                                        <a href="#">
+                                            <img src="assets/images/font-icons/png/001-compare.png" alt=""
+                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Compare">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ================= 4 items end ====================== -->
+            </div>
+        </div>
+    </section>
+
+    <!--============= products end ============== -->
+
+    <!--========= best sell slider start =========-->
+    <section>
+        <div class="container-fluid p-5">
+            <div class="best-product-heading text-center mb-4">
+                <span style="font-size: 25px; font-weight: bold;">Best Selling Product</span>
+            </div>
+            <div class="owl-carousel best-product owl-theme">
+                <div class="item">
+                    <div class="content">
+                        <div class="product p-3 mx-3">
+                            <div class="row">
+                                <div
+                                    class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                                    <img src="assets/images/products/squire-79.png" alt="">
+                                    <div class="product-label">
+                                        <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                            <span>new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-variations">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="color" id="one"><a href="#"
+                                                    style="background-color: #b78269;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #f1cc4e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #31749e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #672a4f;"></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-detail col-8 py-2 position-relative">
+                                    <a href="#">Coat Off Black Long Sleeve</a>
+                                    <h4 class="py-2">$12.00 - $45.00</h4>
+                                    <div class="feedback d-flex justify-content-between mt-3">
+                                        <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                                4.85 (132)</span></div>
+                                        <div id="opacity50" class="pt-1">326 Sold</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="product p-3 mx-3">
+                            <div class="row">
+                                <div
+                                    class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                                    <img src="assets/images/products/squire-48.png" alt="">
+
+
+                                    <div class="product-variations">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="color" id="one"><a href="#"
+                                                    style="background-color: #b78269;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #f1cc4e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #31749e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #672a4f;"></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pro-detail col-8 py-2 position-relative">
+                                    <a href="#">Short Sleeve Polo Shirt</a>
+                                    <h4 class="py-2">$10.00 - $18.50</h4>
+                                    <div class="feedback d-flex justify-content-between mt-3">
+                                        <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                                4.85 (132)</span></div>
+                                        <div id="opacity50" class="pt-1">326 Sold</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="product p-3 mx-3">
+                            <div class="row">
+                                <div
+                                    class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                                    <img src="assets/images/products/squire-118.png" alt="">
+
+                                    <div class="product-variations">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="color d-none" id="one"><a href="#"
+                                                    style="background-color: #b78269;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #f1cc4e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #31749e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #672a4f;"></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-detail col-8 py-2 position-relative">
+                                    <a href="#">GenShuo Black High Heels</a>
+                                    <h4 class="py-2">$20.00 <del> $25.00</del></h4>
+                                    <div class="feedback d-flex justify-content-between mt-3">
+                                        <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                                4.85 (132)</span></div>
+                                        <div id="opacity50" class="pt-1">326 Sold</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="product p-3 mx-3">
+                            <div class="row">
+                                <div
+                                    class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                                    <img src="assets/images/products/squire-34.png" alt="">
+                                    <div class="product-label">
+                                        <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                            <span>top</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-variations">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="color" id="one"><a href="#"
+                                                    style="background-color: #b78269;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #f1cc4e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #31749e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #672a4f;"></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-detail col-8 py-2 position-relative">
+                                    <a href="#">Luxury Fashanable Watches</a>
+                                    <h4 class="py-2">$48.00 <del> $60.00</del></h4>
+                                    <div class="feedback d-flex justify-content-between mt-3">
+                                        <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                                4.85 (132)</span></div>
+                                        <div id="opacity50">326 Sold</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="product p-3 mx-3">
+                            <div class="row">
+                                <div
+                                    class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                                    <img src="assets/images/products/squire-105.png" alt="">
+                                    <div class="product-label">
+                                        <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                            <span>new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-variations">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="color" id="one"><a href="#"
+                                                    style="background-color: #b78269;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #f1cc4e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #31749e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #672a4f;"></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-detail col-8 py-2 position-relative">
+                                    <a href="#">Hottest Lunch Hotpot</a>
+                                    <h4 class="py-2">$21.03 - 36.66</h4>
+                                    <div class="feedback d-flex justify-content-between mt-3">
+                                        <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                                4.85 (132)</span></div>
+                                        <div id="opacity50" class="pt-1">326 Sold</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="product p-3 mx-3">
+                            <div class="row">
+                                <div
+                                    class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                                    <img src="assets/images/products/squire-25.png" alt="">
+                                    <div class="product-label">
+                                        <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                            <span>top</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-variations">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="color" id="one"><a href="#"
+                                                    style="background-color: #b78269;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #f1cc4e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #31749e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #672a4f;"></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-detail col-8 py-2 position-relative">
+                                    <a href="#">Luxury Fashanable Watches</a>
+                                    <h4 class="py-2">$10.00 - 17.55</h4>
+                                    <div class="feedback d-flex justify-content-between mt-3">
+                                        <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                                4.85 (132)</span></div>
+                                        <div id="opacity50" class="pt-1">326 Sold</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="content">
+                        <div class="product p-3 mx-3">
+                            <div class="row">
+                                <div
+                                    class="pro-img col-4 d-flex justify-content-center align-items-center position-relative">
+                                    <img src="assets/images/products/squire-97.png" alt="">
+                                    <div class="product-label">
+                                        <div class="shape1 ps-2 text-uppercase text-white" style="font-size: 12px;">
+                                            <span>new</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-variations">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <span class="color" id="one"><a href="#"
+                                                    style="background-color: #b78269;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #f1cc4e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #31749e;"></a></span>
+                                            <span class="color"><a href="#"
+                                                    style="background-color: #672a4f;"></a></span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-detail col-8 py-2 position-relative">
+                                    <a href="#">Latest bluetooth headphone</a>
+                                    <h4 class="py-2">$15.00 <del> $150.00</del></h4>
+                                    <div class="feedback d-flex justify-content-between mt-3">
+                                        <div><i class="fa-solid fa-star"></i><span id="opacity50">
+                                                4.85 (132)</span></div>
+                                        <div id="opacity50" class="pt-1">326 Sold</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--========= best sell slider end ===========-->
+
+    <!-- nerwlatter section start  -->
+    <section>
+        <div class="container-fluid py-4" style="background-color: #141926;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h4 style="color: #bf8072; font-size:24px; font-weight:bold;">Sign up to newslatter</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <span style="font-size: 15px; color:white;">.... and receive $5 coupon for first shopping</span>
+                    </div>
+                    <div class="col-lg-5 col-md-12">
+                        <form action="" class="position-relative subscribe-form rounded-pill overflow-hidden">
+                            <input type="text"
+                                class="form-control bg-white btn-outline-dark bg-black py-2 rounded-pill mb-0"
+                                style="font-size: 15px;color:#6c757d;" placeholder="Enter your email"
+                                aria-label="Address">
+                            <button class="btn btn-success text-dark py-2 px-4" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5 ">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12 service-info">
+                    <div class="d-flex">
+                        <div><img src="assets/images/font-icons/003-life-insurance.png" alt="" class="img-fluid"></div>
+                        <div class="p-2">
+                            <h5>
+                                <a href="#">Great Value</a>
+                            </h5>
+                            <p>We offer competitive prices on our product range.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 service-info">
+                    <div class="d-flex">
+                        <div><img src="assets/images/font-icons/002-airplane.png" alt="" class="img-fluid"></div>
+                        <div class="p-2">
+                            <h5>
+                                <a href="#">World Wide Delevery</a>
+                            </h5>
+                            <p>we ship product to over 200 countries & regions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 service-info">
+                    <div class="d-flex">
+                        <div><img src="assets/images/font-icons/004-package.png" alt="" class="img-fluid"></div>
+                        <div class="p-2">
+                            <h5>
+                                <a href="#">Safe Payment</a>
+                            </h5>
+                            <p>Pay with the world’s most secure payment methods</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 service-info">
+                    <div class="d-flex">
+                        <div><img src="assets/images/font-icons/001-24-hours.png" alt="" class="img-fluid"></div>
+                        <div class="p-2">
+                            <h5>
+                                <a href="#">24/7 Help Center</a>
+                            </h5>
+                            <p>Round-the-clock assistance for a smooth shopping experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- newslatter section end  -->
+
+
+    <!--=========== footer start ========= -->
+    <section>
+        <div class="container-fluid mt-5">
+            <div class="row" style="border-top: 2px solid #e7e7e8;border-bottom: 2px solid #e7e7e8;">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-box pt-5">
+                    <a href="#"><img src="assets/images/logo.png" class="img-fluid mb-3" alt=""></a><br>
+                    <span style="font-style: 30px;line-height:18px;color:#1b1b1e;font-weight: bold;">Got Questions ?
+                        Call us 24/7!</span>
+                    <div style="font-size: 24px; margin-top: 10px; margin-bottom: 10px;">(090) 8001-8588, (090) 874 548
+                    </div>
+                    <span style="font-size: 15px; ">Address :</span>
+                    <p style="font-size: 14px;margin-bottom: 35px; opacity: 60%;">Collins Street West, Victoria 8007,
+                        Australia</p>
+                    <div class="footer-icons d-flex justify-content-around w-50 pb-5 mb-5">
+                        <div><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+                        <div><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
+                        <div><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                        <div><a href="#"><i class="fab fa-snapchat-ghost"></i></a></div>
+                        <div><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-box pt-5">
+                    <h6>Quick Shop</h6>
+                    <ul class="footer-menu">
+                        <li><a href="#">Opticals</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Sale</a></li>
+                        <li><a href="#">Accessories</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-box pt-5">
+                    <h6>Customer Care</h6>
+                    <ul class="footer-menu">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Compare</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12 footer-box pt-5">
+                    <h6>Account Info</h6>
+                    <ul class="footer-menu">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Track your Order</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                        <li><a href="#">Returns/Exchange</a></li>
+                        <li><a href="#">Product Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-bottom px-4 py-3">
+                <div class="col-lg-6 col-md-6 col-12 my-2">
+                    <span>© 2021 BigBazar All right reserved</span>
+                </div>
+                <div class="col-lg-6 col-md-6 col-12">
+                    <div class="d-flex justify-content-lg-end justify-content-md-end">
+                        <div class="px-3">
+                            <a href="#"><img src="assets/images/home page image/atm-card/1.png" alt=""></a>
+                        </div>
+                        <div class="px-3">
+                            <a href="#"><img src="assets/images/home page image/atm-card/2.png" alt=""></a>
+                        </div>
+                        <div class="px-3">
+                            <a href="#"><img src="assets/images/home page image/atm-card/3.png" alt=""></a>
+                        </div>
+                        <div class="px-3">
+                            <a href="#"><img src="assets/images/home page image/atm-card/4.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--=========== footer end ========= -->
+
+
+    <!-- ======== jump top start ======== -->
+    <section>
+        <a href="#" class="bg-primary text-white" id="scroll"><i class="fa-solid fa-angle-up"></i></a>
+    </section>
+    <!-- ======== jump top start ======== -->
+
+
+
+
+
+    <!--================== js, jquery  =============-->
+    <script src="assets//js/jquery-3.6.0.min.js"></script>
+    <script src="assets//js/owl.carousel.min.js"></script>
+    <script src="assets//js/top-news.js"></script>
+    <script src="assets/js/best-product-slider.js"></script>
+
+
+    <!--=============== sticky navbar start ============= -->
+    <script src="assets/js/sp.stickyHeader.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('#demo-header').spSticyheader({
+                hideHeaderTarget: '.header-top',
+                scrollHeader: 200,
+                customClass: 'make-small',
+                mobileHeader: false
+            })
+        });
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <!-- account dropdown script  -->
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- mega-menu dropdown  -->
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+        // DOMContentLoaded  end
+    </script>
+
+</body>
+
+</html>
